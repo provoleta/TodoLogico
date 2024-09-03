@@ -87,3 +87,9 @@ destinoGasolero(Destino) :-
 itinerariosPosibles(Persona, Destinos) :-
     persona(Persona),
     findall(Destino, destino(Persona, Destino), Destinos).
+
+
+%% predicado para calcular precio de vida
+precioDeVida(Destino, Precio) :-
+    costoDeVida(Destino, Precio).
+
